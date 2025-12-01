@@ -21,7 +21,7 @@ public class SpawnManagerX : MonoBehaviour
     void Start()
     {
         //InvokeRepeating("SpawnRandomBall", startDelay, spawnInterval); // Antes
-        InvokeRepeating("SpawnRandomBall", startDelay); // Despues  (Usando primer delay fijo)
+        Invoke("SpawnRandomBall", startDelay); // Despues  (Usando primer delay fijo)
         //Invoke("SpawnRandomBall", Random.Range(minSpawnInterval,maxSpawnInterval)); //  (Sin primer delay fijo)
     }
 
